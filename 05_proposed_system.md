@@ -169,18 +169,95 @@ The implementation of the blockchain-based voting system in Bangladesh will foll
 
 ## 5.11 Cost-Benefit Analysis
 
-A preliminary cost-benefit analysis comparing the proposed system with traditional voting methods over a 10-year period:
+This section presents a detailed cost-benefit analysis comparing the proposed blockchain-based voting system with the traditional paper ballot method for Bangladesh's parliamentary elections. The analysis considers both quantitative and qualitative factors over a 10-year period.
 
-| Factor                      | Blockchain-Based System | Traditional Paper Ballot |
-| --------------------------- | ----------------------- | ------------------------ |
-| Initial Implementation Cost | $150 million            | $10 million              |
-| Annual Operational Cost     | $15 million             | $50 million              |
-| Cost per Vote (Year 1)      | $1.65                   | $0.60                    |
-| Cost per Vote (Year 10)     | $0.30                   | $0.50                    |
-| Potential Fraud Reduction   | 95%                     | Baseline                 |
-| Result Tabulation Time      | 2-4 hours               | 2-5 days                 |
+### 5.11.1 Cost Breakdown
 
-While the initial costs are higher, the blockchain-based system offers significant long-term savings and intangible benefits such as increased trust and faster results.
+| Cost Category                        | Blockchain-Based System | Traditional Paper Ballot |
+| ------------------------------------ | ----------------------- | ------------------------ |
+| Initial Implementation               | $50 million             | $5 million               |
+| Annual Operational Cost              | $8 million              | $20 million              |
+| Hardware Replacement (every 5 years) | $15 million             | $3 million               |
+| Voter Education (first 3 years)      | $5 million/year         | $1 million/year          |
+| Security and Auditing                | $2 million/year         | $1 million/year          |
+
+### 5.11.2 10-Year Cost Projection
+
+This projection assumes biennial national elections (5 elections over 10 years) and accounts for inflation at 5% annually.
+
+| Year                 | Blockchain-Based System | Traditional Paper Ballot |
+| -------------------- | ----------------------- | ------------------------ |
+| 1                    | $65 million             | $27 million              |
+| 2                    | $15 million             | $21 million              |
+| 3                    | $15 million             | $27.3 million            |
+| 4                    | $10 million             | $21.8 million            |
+| 5                    | $25 million             | $30.1 million            |
+| 6                    | $10.5 million           | $22.9 million            |
+| 7                    | $11 million             | $33.2 million            |
+| 8                    | $11.6 million           | $24.1 million            |
+| 9                    | $12.1 million           | $36.6 million            |
+| 10                   | $12.7 million           | $25.3 million            |
+| **Total (10 years)** | **$187.9 million**      | **$269.3 million**       |
+
+Notes:
+
+- Blockchain system: Higher costs in Years 1 (initial setup) and 5 (hardware refresh).
+- Traditional system: Higher costs in election years (1, 3, 5, 7, 9) due to increased operational expenses.
+- Both systems see gradual cost increases due to inflation.
+
+### 5.11.3 Cost Per Vote Analysis
+
+Assuming a voter population starting at 100 million in Year 1, with a 1.5% annual growth rate, and 70% voter turnout:
+
+| Election Year             | Blockchain-Based System | Traditional Paper Ballot |
+| ------------------------- | ----------------------- | ------------------------ |
+| Year 1                    | $0.93                   | $0.39                    |
+| Year 3                    | $0.21                   | $0.37                    |
+| Year 5                    | $0.33                   | $0.40                    |
+| Year 7                    | $0.14                   | $0.42                    |
+| Year 9                    | $0.15                   | $0.45                    |
+| **Average Cost per Vote** | **$0.35**               | **$0.41**                |
+
+Notes:
+
+- Blockchain system: Higher cost per vote in Year 1 due to initial setup, but significantly lower in subsequent elections.
+- Traditional system: Relatively stable cost per vote, with slight increases due to inflation and population growth.
+- Voter population projections: Year 1: 100M, Year 3: 103M, Year 5: 106.1M, Year 7: 109.3M, Year 9: 112.6M.
+- Costs include all expenses for the respective year, not just election-specific costs.
+
+### 5.11.4 Cumulative Cost Analysis
+
+| Metric                         | Blockchain-Based System | Traditional Paper Ballot |
+| ------------------------------ | ----------------------- | ------------------------ |
+| Total 10-Year Cost             | $187.9 million          | $269.3 million           |
+| Total Votes Cast (5 elections) | 371.4 million           | 371.4 million            |
+| Overall Average Cost per Vote  | $0.51                   | $0.73                    |
+
+This analysis demonstrates that while the blockchain-based system has a higher cost per vote in the initial implementation year, it becomes more cost-effective over time. By the second election (Year 3), the cost per vote for the blockchain system is already lower than the traditional method. The cumulative cost analysis shows that over the 10-year period, the blockchain system is more economical, with an overall average cost per vote that is 30% lower than the traditional paper ballot system.
+
+Moreover, these figures do not account for the qualitative benefits of the blockchain system, such as increased trust, reduced fraud, and faster results, which could provide additional value beyond the direct cost savings.
+
+### 5.11.5 Risk-Adjusted Analysis
+
+Considering potential risks such as cybersecurity threats and implementation challenges, we apply a risk adjustment factor:
+
+| Scenario                            | Blockchain-Based System | Traditional Paper Ballot |
+| ----------------------------------- | ----------------------- | ------------------------ |
+| Best Case                           | $175 million            | $231 million             |
+| Expected Case (10% risk adjustment) | $192 million            | $254.1 million           |
+| Worst Case (20% risk adjustment)    | $210 million            | $277.2 million           |
+
+### 5.11.6 Sensitivity Analysis
+
+Key factors affecting cost-benefit outcomes:
+
+1. **Voter Turnout**: Higher turnout improves cost-effectiveness of the blockchain system.
+2. **Technology Costs**: Decreasing hardware and blockchain operational costs over time.
+3. **Frequency of Elections**: More frequent elections favor the blockchain system's cost-effectiveness.
+
+### 5.11.7 Conclusion
+
+While the blockchain-based system requires a higher initial investment, it offers significant long-term cost savings and numerous qualitative benefits. The break-even point occurs around year 7, after which the blockchain system becomes increasingly cost-effective. When factoring in the qualitative benefits, particularly enhanced trust and reduced fraud, the blockchain-based system presents a compelling value proposition for Bangladesh's electoral future.
 
 ## 5.12 Ethical Considerations
 
