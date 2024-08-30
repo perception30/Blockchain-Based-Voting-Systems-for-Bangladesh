@@ -2,6 +2,7 @@
 
 ## Table of Contents
 
+0. [Abstract](00_abstract.md)
 1. [Introduction](01_introduction.md)
     - 1.1. [Research Objectives](01_introduction.md#research-objectives)
     - 1.2. [Significance of the Study](01_introduction.md#significance-of-the-study)
@@ -9,11 +10,13 @@
     - 2.1. [Electoral System in Bangladesh](02_background.md#electoral-system-in-bangladesh)
     - 2.2. [Challenges in Current Voting Processes](02_background.md#challenges-in-current-voting-processes)
     - 2.3. [Blockchain Technology Overview](02_background.md#blockchain-technology-overview)
+    - 2.4. [Relevance to Bangladesh's Electoral Challenges](02_background.md#relevance-to-bangladeshs-electoral-challenges)
 3. [Literature Review](03_literature_review.md)
     - 3.1. [Blockchain-Based Voting Systems](03_literature_review.md#blockchain-based-voting-systems)
     - 3.2. [Case Studies from Other Countries](03_literature_review.md#case-studies-from-other-countries)
     - 3.3. [Security and Privacy Considerations](03_literature_review.md#security-and-privacy-considerations)
     - 3.4. [Gaps in Existing Research](03_literature_review.md#gaps-in-existing-research)
+    - 3.5. [Relevance to Bangladesh's Electoral Context](03_literature_review.md#relevance-to-bangladeshs-electoral-context)
 4. [Methodology](04_methodology.md)
     - 4.1. [Research Design](04_methodology.md#research-design)
     - 4.2. [Data Collection Methods](04_methodology.md#data-collection-methods)
