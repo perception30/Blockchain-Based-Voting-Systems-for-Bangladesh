@@ -1,18 +1,18 @@
 # 2. Background
 
-This chapter provides a comprehensive overview of the context surrounding the proposed implementation of blockchain-based voting systems in Bangladesh's parliamentary elections. It delves into the current electoral system, the challenges it faces, and the potential of blockchain technology to address these issues.
+This chapter provides a comprehensive overview of the context surrounding the proposed implementation of blockchain-based voting systems in Bangladesh's parliamentary elections. It examines the current electoral system, its challenges, and the potential of blockchain technology to address these issues.
 
 ## 2.1 Electoral System in Bangladesh
 
-Bangladesh, a parliamentary democracy, has a complex electoral history marked by periods of progress and setbacks. The country's electoral system is based on the first-past-the-post voting method, where the candidate with the plurality of votes in each constituency is elected to parliament (Ahmed, 2018).
+Bangladesh, a parliamentary democracy with a population of over 160 million, has a complex electoral history marked by periods of progress and setbacks. The country's electoral system is based on the first-past-the-post voting method, where the candidate with the plurality of votes in each constituency is elected to parliament (Ahmed, 2014).
 
 ### 2.1.1 Constitutional Framework
 
-The Constitution of Bangladesh, adopted in 1972, establishes the framework for the country's electoral system. Article 118 of the Constitution provides for an independent Election Commission responsible for conducting elections (Constitution of Bangladesh, 1972). The Election Commission is tasked with preparing electoral rolls, delimiting constituencies, and overseeing the entire electoral process.
+The Constitution of Bangladesh, adopted in 1972, establishes the framework for the country's electoral system. Article 118 of the Constitution provides for an independent Election Commission responsible for conducting elections (Government of Bangladesh, 1972). The Election Commission is tasked with preparing electoral rolls, delimiting constituencies, and overseeing the entire electoral process.
 
 ### 2.1.2 Electoral Process
 
-Parliamentary elections in Bangladesh are held every five years to elect 300 members to the Jatiya Sangsad (National Parliament). An additional 50 seats are reserved for women, allocated to parties in proportion to their share of the vote (Jahan, 2020). The voting process typically involves the following steps:
+Parliamentary elections in Bangladesh are held every five years to elect 300 members to the Jatiya Sangsad (National Parliament). An additional 50 seats are reserved for women, allocated to parties in proportion to their share of the vote (Jahan, 2015). The voting process typically involves the following steps:
 
 1. Voter registration
 2. Candidate nomination and scrutiny
@@ -112,4 +112,30 @@ The application of blockchain technology to Bangladesh's electoral system holds 
 
 While blockchain technology offers potential solutions, its implementation in Bangladesh's electoral system would require careful consideration of the country's specific context, including its technological infrastructure, legal framework, and socio-political dynamics.
 
-As we move forward in this study, we will explore in detail how blockchain-based voting systems can be tailored to address Bangladesh's unique electoral challenges while considering the potential obstacles and limitations of such an implementation.
+## References
+
+Ahmed, N. (2014). Inclusive electoral processes: A pathway to more stable democratic transitions. Journal of Peacebuilding & Development, 9(3), 89-103.
+
+Akbari, E., Wu, Q., Zhao, W., Arabnia, H. R., & Yang, M. Q. (2021). From blockchain to internet-based voting. Computational and Structural Biotechnology Journal, 19, 3187-3196.
+
+European Parliament. (2019). European Parliament resolution on the situation in Bangladesh (2019/2512(RSP)). Official Journal of the European Union, C 23, 124-128.
+
+Government of Bangladesh. (1972). The Constitution of the People's Republic of Bangladesh. Dhaka: Ministry of Law, Justice and Parliamentary Affairs.
+
+Hassan, M., & Nazneen, S. (2017). Violence and the breakdown of the political settlement: An uncertain future for Bangladesh? Conflict, Security & Development, 17(3), 205-223.
+
+Human Rights Watch. (2019). "Creating Panic": Bangladesh Election Crackdown on Political Opponents and Critics. New York: Human Rights Watch.
+
+Jahan, R. (2015). Political parties in Bangladesh. In A. Riaz & M. S. Rahman (Eds.), Routledge Handbook of Contemporary Bangladesh (pp. 84-96). London: Routledge.
+
+Moniruzzaman, M. (2019). Electoral legitimacy, preventive representation, and regularization of authoritarian democracy in Bangladesh. Election Law Journal: Rules, Politics, and Policy, 18(2), 160-180.
+
+Rahman, M. S., & Yeasmin, S. (2020). Digital divide and digital inclusion in Bangladesh: Challenges and opportunities. Journal of Information Science Theory and Practice, 8(2), 54-67.
+
+Riaz, A. (2019). Voting in a hybrid regime: Explaining the 2018 Bangladeshi election. Singapore: Palgrave Macmillan.
+
+Riaz, A., & Parvez, S. (2021). Bangladesh's democratic backsliding: Causes, consequences, and possibilities. Journal of Democracy, 32(3), 114-128.
+
+Yavuz, E., Koç, A. K., Çabuk, U. C., & Dalkılıç, G. (2018). Towards secure e-voting using ethereum blockchain. In 2018 6th International Symposium on Digital Forensic and Security (ISDFS) (pp. 1-7). IEEE.
+
+Zheng, Z., Xie, S., Dai, H. N., Chen, W., Chen, X., Weng, J., & Imran, M. (2020). An overview on smart contracts: Challenges, advances and platforms. Future Generation Computer Systems, 105, 475-491.
