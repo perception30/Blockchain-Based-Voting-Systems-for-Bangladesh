@@ -4,7 +4,7 @@ This chapter provides a comprehensive overview of the context surrounding the pr
 
 ## 2.1 Electoral System in Bangladesh
 
-Bangladesh, a parliamentary democracy with a population of over 160 million, has a complex electoral history marked by periods of progress and setbacks. The country's electoral system is based on the first-past-the-post voting method, where the candidate with the plurality of votes in each constituency is elected to parliament (Ahmed, 2014).
+Bangladesh, a parliamentary democracy with a population of over 160 million, has a complex electoral history marked by periods of progress and setbacks. The country's electoral system is based on the first-past-the-post voting method, where the candidate with the plurality of votes in each constituency is elected to parliament (Ahmed, 2003).
 
 ### 2.1.1 Constitutional Framework
 
@@ -36,7 +36,7 @@ The electoral system in Bangladesh faces numerous challenges that undermine its 
 
 ### 2.2.1 Voter List Inaccuracies
 
-One of the primary challenges is maintaining an accurate and up-to-date voter list. Despite the introduction of biometric registration, there have been reports of ghost voters, duplicate entries, and the exclusion of eligible voters (Hassan & Nazneen, 2017). These inaccuracies create opportunities for electoral fraud and disenfranchisement.
+One of the primary challenges is maintaining an accurate and up-to-date voter list. Despite the introduction of biometric registration, there have been reports of ghost voters, duplicate entries, and the exclusion of eligible voters (Akhter, M. 2017). These inaccuracies create opportunities for electoral fraud and disenfranchisement.
 
 ### 2.2.2 Ballot Box Stuffing and Vote Rigging
 
@@ -48,7 +48,7 @@ Voter intimidation and coercion remain significant concerns in Bangladesh's elec
 
 ### 2.2.4 Lack of Transparency in Vote Counting
 
-The vote counting process has been criticized for its lack of transparency. Allegations of manipulation during the counting and tabulation of votes have been common in recent elections (Riaz, 2019). The absence of a robust, transparent system for vote counting erodes public trust in the electoral outcome.
+The vote counting process has been criticized for its lack of transparency. Allegations of manipulation during the counting and tabulation of votes have been common in recent elections (Shahriar, S. 2020). The absence of a robust, transparent system for vote counting erodes public trust in the electoral outcome.
 
 ### 2.2.5 Limited Access for International Observers
 
@@ -114,28 +114,22 @@ While blockchain technology offers potential solutions, its implementation in Ba
 
 ## References
 
-Ahmed, N. (2014). Inclusive electoral processes: A pathway to more stable democratic transitions. Journal of Peacebuilding & Development, 9(3), 89-103.
+Ahmed, N., & Ahmad, S. Z. (2003). The parliamentary elections in Bangladesh, October 2001. Electoral Studies, 22(3), 503–509. https://doi.org/10.1016/s0261-3794(03)00007-6
 
-Akbari, E., Wu, Q., Zhao, W., Arabnia, H. R., & Yang, M. Q. (2021). From blockchain to internet-based voting. Computational and Structural Biotechnology Journal, 19, 3187-3196.
+European Parliament. (2019). European Parliament resolution on the situation in Bangladesh (2019/2512(RSP)). Official Journal of the European Union, C 23, 124-128. https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A52019IP0024
 
-European Parliament. (2019). European Parliament resolution on the situation in Bangladesh (2019/2512(RSP)). Official Journal of the European Union, C 23, 124-128.
+Government of Bangladesh. (1972). The Constitution of the People's Republic of Bangladesh. Dhaka: Ministry of Law, Justice and Parliamentary Affairs. http://bdlaws.minlaw.gov.bd/act-367.html
 
-Government of Bangladesh. (1972). The Constitution of the People's Republic of Bangladesh. Dhaka: Ministry of Law, Justice and Parliamentary Affairs.
+Yavuz, E., Koç, A. K., Çabuk, U. C., & Dalkılıç, G. (2018). Towards secure e-voting using ethereum blockchain. In 2018 6th International Symposium on Digital Forensic and Security (ISDFS) (pp. 1-7). IEEE. https://doi.org/10.1109/ISDFS.2018.8355340
 
-Hassan, M., & Nazneen, S. (2017). Violence and the breakdown of the political settlement: An uncertain future for Bangladesh? Conflict, Security & Development, 17(3), 205-223.
+Zheng, Z., Xie, S., Dai, H. N., Chen, W., Chen, X., Weng, J., & Imran, M. (2020). An overview on smart contracts: Challenges, advances and platforms. Future Generation Computer Systems, 105, 475-491. https://doi.org/10.1016/j.future.2019.12.019
 
-Human Rights Watch. (2019). "Creating Panic": Bangladesh Election Crackdown on Political Opponents and Critics. New York: Human Rights Watch.
+Human Rights Watch. (2019). Creating Panic: Bangladesh Election Crackdown on Political Opponents and Critics. https://www.hrw.org/report/2018/12/22/creating-panic/bangladesh-election-crackdown-political-opponents-and-critics
 
-Jahan, R. (2015). Political parties in Bangladesh. In A. Riaz & M. S. Rahman (Eds.), Routledge Handbook of Contemporary Bangladesh (pp. 84-96). London: Routledge.
+Sayem, Md. A. (2023). Citizens’ Behavioral Acceptance of Electronic Voting Machine (EVM) in the Electoral Culture of Bangladesh. Journal of Asian and African Studies. https://doi.org/10.1177/00219096231179654
 
-Moniruzzaman, M. (2019). Electoral legitimacy, preventive representation, and regularization of authoritarian democracy in Bangladesh. Election Law Journal: Rules, Politics, and Policy, 18(2), 160-180.
+Jahan, R. (2015). Political Parties in Bangladesh. Prothoma Prokashon.
 
-Rahman, M. S., & Yeasmin, S. (2020). Digital divide and digital inclusion in Bangladesh: Challenges and opportunities. Journal of Information Science Theory and Practice, 8(2), 54-67.
+Akhter, M. (2017). Electoral corruption in Bangladesh. Routledge.
 
-Riaz, A. (2019). Voting in a hybrid regime: Explaining the 2018 Bangladeshi election. Singapore: Palgrave Macmillan.
-
-Riaz, A., & Parvez, S. (2021). Bangladesh's democratic backsliding: Causes, consequences, and possibilities. Journal of Democracy, 32(3), 114-128.
-
-Yavuz, E., Koç, A. K., Çabuk, U. C., & Dalkılıç, G. (2018). Towards secure e-voting using ethereum blockchain. In 2018 6th International Symposium on Digital Forensic and Security (ISDFS) (pp. 1-7). IEEE.
-
-Zheng, Z., Xie, S., Dai, H. N., Chen, W., Chen, X., Weng, J., & Imran, M. (2020). An overview on smart contracts: Challenges, advances and platforms. Future Generation Computer Systems, 105, 475-491.
+Moniruzzaman, M. (2019). Electoral legitimacy, preventive representation, and regularization of authoritarian democracy in Bangladesh. In Elections-A global perspective. IntechOpen.
