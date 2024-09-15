@@ -364,7 +364,13 @@ The system architecture is modular, comprising the following key components:
 
   - Engage in policy advocacy, highlight international best practices, and demonstrate system benefits through pilots.
 
-## 5.15 Conclusion
+## 5.15 System Architecture
+
+![alt illustrates the system architecture](/assets/Images_Figure_5.15_illustrates_the_system_architecture.png)
+
+_Figure 5.15_ illustrates the system architecture.
+
+## 5.16 Conclusion
 
 The proposed blockchain-based voting system presents a transformative opportunity for Bangladesh to address longstanding electoral challenges. By harnessing cutting-edge technology tailored to the country's unique context, the system promises to:
 
