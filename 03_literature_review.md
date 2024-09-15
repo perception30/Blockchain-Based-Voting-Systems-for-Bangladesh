@@ -1,204 +1,287 @@
 # 3. Literature Review
 
-This chapter provides a comprehensive review of existing literature on blockchain-based voting systems, their applications in various contexts, and their potential relevance to Bangladesh's electoral challenges. The review is structured to cover key aspects of blockchain voting, including technological foundations, implementation case studies, security and privacy considerations, and identified research gaps.
+## 3.1 Introduction
 
-## 3.1 Blockchain-Based Voting Systems
+The integrity of electoral processes is fundamental to the legitimacy of democratic governance. Recent advancements in blockchain technology have sparked significant interest in its potential application to voting systems, aiming to enhance transparency, security, and public trust. This chapter provides a critical analysis of existing literature on blockchain-based voting systems, examining their technological underpinnings, implementation experiences in various countries, and the specific challenges and opportunities they present for Bangladesh's parliamentary elections. The review identifies key gaps in current research and sets the stage for proposing a tailored blockchain-based voting solution for Bangladesh.
 
-### 3.1.1 Technological Foundations
+## 3.2 Blockchain-Based Voting Systems
 
-Blockchain technology, originally developed as the underlying mechanism for cryptocurrencies, has emerged as a potential solution for enhancing the integrity and transparency of voting systems (Kshetri & Voas, 2018). The fundamental principles of blockchain technology that make it suitable for voting applications include:
+### 3.2.1 Technological Foundations
 
-1. **Decentralization**: Unlike traditional centralized voting systems, blockchain-based systems distribute data across multiple nodes, reducing single points of failure and the risk of centralized manipulation (Yavuz et al., 2018).
-2. **Immutability**: Once a transaction (vote) is recorded on the blockchain, it becomes extremely difficult to alter or delete, ensuring the integrity of the voting record (Atzori, 2017).
-3. **Transparency**: All transactions on a blockchain are visible to all participants, allowing for real-time auditing and verification of the voting process (Noizat, 2015).
-4. **Cryptographic Security**: Advanced encryption techniques protect the confidentiality of votes while ensuring their authenticity (Hardwick et al., 2018).
+Blockchain technology, introduced by Nakamoto (2008) through Bitcoin, operates as a decentralized ledger that records transactions across multiple nodes in a network. Its core features—decentralization, immutability, transparency, and cryptographic security—make it a compelling candidate for secure voting systems (Yavuz et al., 2018; Kshetri & Voas, 2018).
 
-These characteristics address many of the challenges faced by traditional voting systems, particularly in contexts like Bangladesh where trust in the electoral process has been eroded (Rahman, 2019).
+- **Decentralization**: Eliminates the need for a central authority, distributing control across the network and reducing the risk of single points of failure or centralized manipulation (Hughes et al., 2019).
+- **Immutability**: Ensures that once a vote is recorded, it cannot be altered or deleted, safeguarding the integrity of electoral records (Zheng et al., 2018).
+- **Transparency**: Provides all participants with access to the ledger, enabling real-time auditing and increasing accountability (Noizat, 2015).
+- **Cryptographic Security**: Employs advanced encryption methods to protect voter anonymity and prevent unauthorized access (Dagher et al., 2018).
 
-### 3.1.2 Architectures and Protocols
+These characteristics address critical vulnerabilities in traditional voting systems, such as fraud, tampering, and lack of transparency, which are particularly prevalent in contexts with contested electoral integrity (Rahman, 2019).
 
-Various blockchain architectures and protocols have been proposed for voting systems, each with its own strengths and limitations:
+### 3.2.2 Architectures and Protocols
 
-1. **Public Blockchains**: Systems like Follow My Vote use public blockchains like Bitcoin or Ethereum, leveraging their established security and decentralization (Follow My Vote, 2020). However, these systems often face scalability issues and may not provide the level of privacy required for national elections.
-2. **Permissioned Blockchains**: Platforms like Hyperledger Fabric offer more control over who can participate in the network, potentially addressing some privacy concerns while maintaining transparency (Ansper et al., 2018).
-3. **Hybrid Systems**: Some proposed architectures combine blockchain with other technologies, such as homomorphic encryption or zero-knowledge proofs, to enhance privacy and scalability (Park et al., 2021).
-4. **Consensus Mechanisms**: Various consensus protocols have been adapted for voting systems, including Proof of Stake (PoS) and Practical Byzantine Fault Tolerance (PBFT), each offering different trade-offs between security, scalability, and energy efficiency (Wang et al., 2018).
+The architecture of a blockchain-based voting system significantly influences its performance, security, and scalability (Schwartz et al., 2016). Key architectures include:
 
-The choice of architecture and protocol significantly impacts the system's performance, security, and suitability for large-scale elections like those in Bangladesh.
+- **Public Blockchains**: Open networks like Ethereum offer high transparency but face scalability and privacy challenges, making them less suitable for national elections (Buterin, 2014; Park et al., 2021).
+- **Permissioned Blockchains**: Networks such as Hyperledger Fabric restrict access to known entities, enhancing privacy and control while maintaining some level of decentralization (Androulaki et al., 2018).
+- **Consortium Blockchains**: A hybrid approach where the network is controlled by a group of organizations, balancing transparency and efficiency (Sousa et al., 2018).
 
-### 3.1.3 Smart Contracts in Voting Systems
+Consensus mechanisms are vital for blockchain security and efficiency:
 
-Smart contracts play a crucial role in automating and securing various aspects of the voting process in blockchain-based systems:
+- **Proof of Work (PoW)**: Secure but energy-intensive, making it impractical for large-scale elections (Nakamoto, 2008).
+- **Proof of Stake (PoS)**: More energy-efficient but can be vulnerable to security risks if not properly implemented (King & Nadal, 2012).
+- **Practical Byzantine Fault Tolerance (PBFT)**: Offers high throughput and low latency, suitable for permissioned networks (Castro & Liskov, 1999).
 
-1. **Voter Registration**: Smart contracts can manage voter registration, ensuring that each eligible voter is registered only once and can cast only one vote (McCorry et al., 2017).
-2. **Vote Casting**: The actual process of casting a vote can be encoded in a smart contract, ensuring that votes are recorded accurately and immutably (Hardwick et al., 2018).
-3. **Vote Counting**: Smart contracts can automate the vote counting process, providing real-time results and reducing the potential for human error or manipulation (Yavuz et al., 2018).
-4. **Audit Trail**: Smart contracts can generate a transparent and immutable audit trail of all voting-related activities, enhancing the overall integrity of the election (Atzori, 2017).
+The selection of architecture and consensus protocols must consider the specific needs and constraints of the electoral context.
 
-The use of smart contracts in voting systems offers significant potential for enhancing the efficiency and transparency of elections in Bangladesh, where manual processes have been prone to errors and manipulation (Riaz, 2020).
+### 3.2.3 Smart Contracts in Voting Systems
 
-## 3.2 Case Studies from Other Countries
+Smart contracts are self-executing agreements encoded on the blockchain, which can automate and secure electoral processes (Zheng et al., 2020):
 
-### 3.2.1 Estonia's I-Voting System
+- **Voter Registration**: Automates eligibility verification, reducing errors and administrative burden (McCorry et al., 2017).
+- **Vote Casting and Counting**: Ensures accurate recording and instantaneous tallying of votes, minimizing human error (Hardwick et al., 2018).
+- **Audit Trails**: Creates immutable records of all transactions, enhancing transparency and facilitating post-election audits (Zhang et al., 2020).
 
-Estonia has been a pioneer in implementing digital voting systems, including blockchain-based solutions:
+Proper coding and auditing of smart contracts are essential to prevent vulnerabilities that could compromise the system (Tikhomirov et al., 2018).
 
-- **Implementation**: Estonia introduced internet voting (I-Voting) in 2005 and has been continuously improving the system, incorporating blockchain elements in recent years (Solvak & Vassil, 2018).
-- **Technology**: The system uses a combination of public key infrastructure (PKI) for voter authentication and blockchain for vote storage and verification (Kubicek et al., 2016).
-- **Outcomes**: I-Voting has been used in multiple elections, with up to 44% of votes cast online in recent elections (Valimised, 2019).
-- **Challenges**: Despite its success, the system has faced criticism regarding potential vulnerabilities and the difficulty of ensuring vote secrecy (Springall et al., 2014).
+## 3.3 Case Studies from Other Countries
 
-Estonia's experience offers valuable insights for Bangladesh, particularly in terms of gradual implementation and the importance of building public trust in digital voting systems.
+### 3.3.1 Estonia's Internet Voting System
 
-### 3.2.2 West Virginia's Mobile Voting Pilot
+Estonia is a pioneer in implementing nationwide electronic voting:
 
-West Virginia conducted a blockchain-based mobile voting pilot for overseas voters in 2018:
+- **Implementation**: Introduced internet voting (i-Voting) in 2005, with continuous enhancements to security and infrastructure (Heiberg et al., 2018).
+- **Technology**: Utilizes end-to-end encryption, secure digital IDs for voter authentication, and a public codebase for transparency (Vinkel, 2020).
+- **Outcomes**: High adoption rates, with 46.7% of votes cast online in the 2019 parliamentary elections, demonstrating increased voter convenience and accessibility (Estonian National Electoral Committee, 2019).
+- **Challenges**: Ongoing concerns about cybersecurity threats and the need to ensure voter anonymity and data protection (Springall et al., 2014).
 
-- **Implementation**: The pilot used a mobile app developed by Voatz, which employed blockchain technology for vote storage and verification (Warner, 2018).
-- **Technology**: The system used a permissioned blockchain and biometric authentication to ensure voter identity and vote integrity (Voatz, 2020).
-- **Outcomes**: The pilot was used in two counties for the 2018 midterm elections, allowing overseas military personnel to vote via smartphone (Warner, 2018).
-- **Challenges**: The system faced criticism from security experts regarding potential vulnerabilities and lack of transparency (Specter et al., 2020).
+Estonia's experience underscores the importance of robust security measures, legal frameworks, and public trust in adopting electronic voting solutions.
 
-While the scale of this pilot was much smaller than what would be required for Bangladesh's national elections, it provides insights into the challenges of implementing mobile voting solutions in a real-world context.
+### 3.3.2 West Virginia's Mobile Voting Pilot
 
-### 3.2.3 Sierra Leone's Blockchain-Assisted Election
+West Virginia conducted a mobile voting pilot using blockchain technology:
 
-Sierra Leone partially used blockchain technology in its 2018 presidential election:
+- **Implementation**: Deployed during the 2018 midterm elections for military personnel stationed overseas (Warner, 2018).
+- **Technology**: Utilized the Voatz app, incorporating biometric authentication and a permissioned blockchain for secure vote recording (Voatz, 2020).
+- **Outcomes**: Improved accessibility for absentee voters with 144 participants across 24 countries, though on a limited scale (Warner, 2018).
+- **Challenges**: Criticized for potential security vulnerabilities, lack of transparency, and reliance on proprietary software (Specter et al., 2020).
 
-- **Implementation**: A blockchain-based system was used to record votes in the Western District, alongside the traditional paper-based system (Agora, 2018).
-- **Technology**: The system used a permissioned blockchain to create an immutable record of the vote count (Agora, 2018).
-- **Outcomes**: While the blockchain system was not used for official results, it provided a parallel record that could be compared with the official count (Agora, 2018).
-- **Challenges**: There was some confusion and controversy regarding the extent of blockchain use in the election, highlighting the importance of clear communication in such implementations (Orcutt, 2018).
+The pilot highlights the complexities of balancing usability, security, and transparency in blockchain-based voting applications.
 
-This case study is particularly relevant for Bangladesh, as it demonstrates how blockchain can be integrated into existing electoral processes in a developing country context.
+### 3.3.3 Sierra Leone's Blockchain Initiative
 
-## 3.3 Security and Privacy Considerations
+Sierra Leone explored blockchain technology in its electoral process:
 
-### 3.3.1 Cryptographic Techniques
+- **Implementation**: Partnered with Agora to record votes on a blockchain during the 2018 presidential elections (Agora, 2018).
+- **Technology**: Employed a permissioned blockchain to create a parallel system for vote tallying and verification (Agora, 2018).
+- **Outcomes**: Demonstrated potential for enhancing transparency but was not officially adopted for result determination (Orcutt, 2018).
+- **Challenges**: Miscommunication about the extent of blockchain use and questions about scalability and official integration (Orcutt, 2018).
 
-Blockchain-based voting systems employ various cryptographic techniques to ensure vote secrecy and integrity:
+This case emphasizes the need for clear communication, stakeholder engagement, and addressing scalability concerns in blockchain voting initiatives.
 
-1. **Homomorphic Encryption**: This allows votes to be counted without decrypting individual ballots, preserving voter privacy (Park et al., 2021).
-2. **Zero-Knowledge Proofs**: These enable verification of vote validity without revealing the actual vote content (Ben-Sasson et al., 2014).
-3. **Ring Signatures**: Used to ensure voter anonymity while still allowing for vote verification (Russo et al., 2021).
+## 3.4 Security and Privacy Considerations
 
-The application of these techniques in Bangladesh's context would need to consider the computational resources available and the technical literacy of the voting population.
+### 3.4.1 Cryptographic Techniques
 
-### 3.3.2 Voter Authentication Mechanisms
+Protecting voter privacy and ensuring data security are paramount:
 
-Secure voter authentication is crucial for the integrity of blockchain-based voting systems:
+- **Homomorphic Encryption**: Allows computations on encrypted data, enabling vote tallying without decrypting individual votes (Araujo et al., 2016).
+- **Zero-Knowledge Proofs**: Enable verification of voter eligibility and vote integrity without revealing sensitive information (Ben-Sasson et al., 2014).
+- **Ring Signatures**: Provide anonymity by allowing a signer to act on behalf of a group without disclosing their identity (Noether, 2015).
 
-1. **Biometric Authentication**: Systems like Voatz use biometric data (e.g., fingerprints, facial recognition) for voter verification (Voatz, 2020).
-2. **Multi-Factor Authentication**: Combining something the voter knows (e.g., password), has (e.g., ID card), and is (biometrics) can enhance security (Pawlak et al., 2018).
-3. **Blockchain-Based Identity Management**: Some proposed systems use blockchain itself to manage voter identities, potentially reducing the risk of identity theft or fraud (Al-Rawy et al., 2017).
+These techniques enhance security but may introduce computational overhead, affecting system performance (Castelló Ferrer et al., 2021).
 
-For Bangladesh, where voter list inaccuracies have been a persistent issue (Hassan & Nazneen, 2017), robust authentication mechanisms are particularly important.
+### 3.4.2 Voter Authentication Mechanisms
 
-### 3.3.3 Resistance to Manipulation and Attacks
+Secure and accessible authentication is critical:
 
-Blockchain voting systems must be designed to resist various forms of attacks and manipulation:
+- **Biometric Authentication**: Uses unique physiological characteristics but raises privacy concerns and requires robust data protection measures (Ashok et al., 2020).
+- **Multi-Factor Authentication**: Combines passwords, tokens, and biometrics to enhance security (Pillitteri & Brewer, 2019).
+- **Blockchain-Based Identity Management**: Employs decentralized identifiers (DIDs) to give users control over their digital identities (Preukschat & Reed, 2021).
 
-1. **Distributed Denial of Service (DDoS) Attacks**: The decentralized nature of blockchain can provide some inherent resistance to DDoS attacks, but additional measures may be necessary (Kshetri & Voas, 2018).
-2. **51% Attacks**: In permissioned systems, careful selection of node operators can mitigate the risk of 51% attacks (Wang et al., 2018).
-3. **Smart Contract Vulnerabilities**: Rigorous auditing and formal verification of smart contracts are essential to prevent exploitation of code vulnerabilities (Zheng et al., 2020).
+In regions with varying levels of technological infrastructure, ensuring widespread accessibility while maintaining security is a significant challenge (Rahman & Yeasmin, 2020).
 
-Given the history of electoral manipulation in Bangladesh (Moniruzzaman, 2019), designing a system resistant to both technical and social engineering attacks is crucial.
+### 3.4.3 Resistance to Manipulation and Attacks
 
-## 3.4 Gaps in Existing Research
+Blockchain systems must be resilient against various threats:
 
-### 3.4.1 Scalability Challenges
+- **51% Attacks**: In permissioned blockchains, controlling node access mitigates the risk of a majority attack (Wang et al., 2019).
+- **Smart Contract Vulnerabilities**: Require thorough testing and formal verification to prevent exploitation (Atzei et al., 2017).
+- **Denial-of-Service Attacks**: Distributed networks offer inherent resistance, but additional safeguards are necessary (Kshetri & Voas, 2018).
 
-While blockchain technology has shown promise in small-scale implementations, research on its scalability for national elections in populous countries like Bangladesh is limited:
+Continuous monitoring and updating of security protocols are essential to protect against evolving threats (Zheng et al., 2018).
 
-1. **Transaction Throughput**: Most existing studies focus on small-scale elections or pilots. Research is needed on how to handle the high volume of transactions required for a national election in Bangladesh (Yavuz et al., 2018).
-2. **Network Latency**: Studies on minimizing network latency in areas with poor internet infrastructure, which is relevant to many parts of Bangladesh, are lacking (Kshetri & Voas, 2018).
-3. **Storage Requirements**: Long-term storage of blockchain data for large-scale elections needs further investigation, especially considering data retention laws and the need for future audits (Zheng et al., 2020).
+## 3.5 Gaps in Existing Research
 
-### 3.4.2 Integration with Existing Electoral Infrastructure
+### 3.5.1 Scalability and Performance Challenges
 
-There is a significant research gap in how blockchain-based systems can be integrated with existing electoral processes and infrastructure:
+Current studies often focus on small-scale implementations, with limited exploration of scalability for populous nations:
 
-1. **Hybrid Systems**: More research is needed on hybrid systems that combine blockchain with traditional paper-based voting, which could be a transitional solution for countries like Bangladesh (Agora, 2018).
-2. **Legacy System Integration**: Studies on integrating blockchain with existing digital systems (e.g., electronic voting machines) are limited (Augusto et al., 2019).
-3. **Legal and Regulatory Framework**: Research on adapting legal frameworks to accommodate blockchain voting, particularly in the context of developing countries like Bangladesh, is insufficient (Kouzmin et al., 2019).
+- **Transaction Throughput**: High voter volumes, as seen in Bangladesh, require systems capable of handling millions of transactions efficiently (Zamani et al., 2018).
+- **Network Latency**: Poor internet connectivity in rural areas can impede system performance (Islam et al., 2021).
+- **Resource Requirements**: Computational and storage demands may exceed the capacities of existing infrastructure (Kim & Lee, 2021).
 
-### 3.4.3 Socio-Technical Considerations
+Addressing these challenges is crucial for practical large-scale deployment.
 
-The social and political implications of implementing blockchain voting systems, especially in contexts like Bangladesh, are understudied:
+### 3.5.2 Integration with Existing Electoral Infrastructure
 
-1. **Digital Divide**: More research is needed on how to implement blockchain voting in areas with low digital literacy and limited access to technology, which is relevant to many parts of Bangladesh (Rahman & Yeasmin, 2020).
-2. **Public Trust**: Studies on building and maintaining public trust in blockchain voting systems, particularly in countries with a history of electoral disputes like Bangladesh, are limited (Riaz, 2020).
-3. **Accessibility**: Research on making blockchain voting systems accessible to all segments of the population, including people with disabilities and the elderly, is insufficient (Pawlak et al., 2018).
+Research on melding blockchain solutions with traditional systems is scarce:
 
-## 3.5 Relevance to Bangladesh's Electoral Context
+- **Hybrid Models**: Combining blockchain with established voting methods could offer transitional solutions (Augusto et al., 2019).
+- **Interoperability**: Ensuring seamless operation with current technologies and processes is necessary for acceptance (Kouhizadeh et al., 2019).
+- **Legal Compatibility**: Adapting electoral laws to accommodate technological changes requires comprehensive analysis (Esayas, 2018).
 
-### 3.5.1 Addressing Voter List Inaccuracies
+Developing frameworks for integration can facilitate smoother adoption and mitigate resistance.
 
-Blockchain technology has the potential to address the persistent issue of voter list inaccuracies in Bangladesh:
+### 3.5.3 Socio-Technical Considerations
 
-1. **Immutable Voter Registry**: A blockchain-based voter registry could provide an immutable and transparent record of eligible voters, reducing the risk of ghost voters and duplicate entries (Hassan & Nazneen, 2017).
-2. **Real-time Updates**: Smart contracts could facilitate real-time updates to the voter list, ensuring it remains current and accurate (McCorry et al., 2017).
-3. **Decentralized Verification**: A distributed system could allow for decentralized verification of voter eligibility, potentially reducing the risk of centralized manipulation (Yavuz et al., 2018).
+The human element in technological adoption is underrepresented:
 
-### 3.5.2 Enhancing Transparency and Trust
+- **Digital Literacy**: Varying levels of technological understanding can affect usability and trust (Rahman & Yeasmin, 2020).
+- **Public Perception**: Skepticism toward new technologies may hinder acceptance without adequate education and transparency (Mendiluce & van Dijk, 2021).
+- **Accessibility**: Systems must be designed to accommodate users with disabilities and ensure inclusivity (Velleman et al., 2017).
 
-The transparency inherent in blockchain systems could significantly improve trust in Bangladesh's electoral process:
+Greater focus on socio-technical research can enhance system design and acceptance.
 
-1. **Immutable Audit Trail**: Blockchain's immutable ledger could provide a transparent and tamper-resistant record of all voting activities, addressing concerns about vote manipulation (Atzori, 2017).
-2. **Real-time Monitoring**: Stakeholders could potentially monitor the voting process in real-time, enhancing transparency and reducing the potential for fraud (Noizat, 2015).
-3. **Decentralized Control**: By distributing control among multiple stakeholders, blockchain could reduce the risk of centralized manipulation, a significant concern in Bangladesh's elections (Riaz, 2019).
+## 3.6 Relevance to Bangladesh's Electoral Context
 
-### 3.5.3 Overcoming Infrastructure Limitations
+### 3.6.1 Addressing Voter List Inaccuracies
 
-Blockchain technology could potentially address some of the infrastructure challenges faced by Bangladesh's electoral system:
+Blockchain can improve the accuracy and integrity of voter registries:
 
-1. **Resilience to Network Issues**: Distributed systems could provide greater resilience to network failures or intentional disruptions, a significant concern in Bangladesh (Kshetri & Voas, 2018).
-2. **Reduced Dependence on Physical Infrastructure**: Blockchain-based systems could potentially reduce the reliance on physical voting infrastructure, which has been vulnerable to violence and manipulation in past elections (Human Rights Watch, 2019).
-3. **Gradual Implementation**: Blockchain solutions could be implemented gradually, starting with specific aspects of the electoral process (e.g., voter registration) and expanding over time, allowing for a phased approach that considers Bangladesh's infrastructure limitations (Solvak & Vassil, 2018).
+- **Immutable Records**: Prevent unauthorized alterations, ensuring only eligible voters can participate (Hassan & Nazneen, 2017).
+- **Real-Time Updates**: Facilitate timely inclusion of new eligible voters and removal of outdated entries (McCorry et al., 2017).
+- **Distributed Verification**: Enables multiple stakeholders to verify voter information, enhancing transparency (Yavuz et al., 2018).
 
-In conclusion, while blockchain technology offers promising solutions to many of the challenges faced by Bangladesh's electoral system, significant research gaps remain. Addressing these gaps and carefully considering the unique context of Bangladesh will be crucial for the successful implementation of a blockchain-based voting system in the country.
+Implementing these features can reduce fraud and build public confidence in the electoral process.
+
+### 3.6.2 Enhancing Transparency and Trust
+
+Transparency is crucial in a context of eroded public trust:
+
+- **Auditability**: Transparent recording of votes allows for verification by independent observers (Atzori, 2017).
+- **Decentralized Oversight**: Reduces the potential for manipulation by any single entity (Riaz, 2019).
+- **Public Engagement**: Increased transparency can foster greater public participation and confidence (Noizat, 2015).
+
+Blockchain's inherent features align with the need for increased accountability in Bangladesh's elections.
+
+### 3.6.3 Overcoming Infrastructure Limitations
+
+Adapting to infrastructural challenges is essential:
+
+- **Off-Chain Solutions**: Leveraging technologies like SMS voting or offline data collection with later blockchain integration (Islam et al., 2021).
+- **Phased Implementation**: Starting with urban areas or pilot projects to test and refine the system (Solvak & Vassil, 2018).
+- **Capacity Building**: Training personnel and educating the public to build technological competency (Kabir & Zhenhui, 2020).
+
+Tailoring the implementation strategy to Bangladesh's context can enhance feasibility.
+
+## 3.7 Summary
+
+The literature indicates that while blockchain technology holds significant promise for enhancing electoral integrity, particularly in areas of transparency and security, substantial challenges remain. These include technical scalability, legal and regulatory adaptations, and socio-cultural acceptance. The particular circumstances of Bangladesh—such as infrastructural limitations, digital literacy levels, and historical electoral challenges—necessitate a carefully designed approach. This study aims to contribute to this emerging field by addressing the identified gaps and proposing a blockchain-based voting system tailored to the needs of Bangladesh's parliamentary elections.
 
 ## References
 
-- Agora. (2018). Sierra Leone election: Blockchain-based voting used in West Africa. Retrieved from [https://doi.org/10.33847/2686-8296.1.1_1](https://doi.org/10.33847/2686-8296.1.1_1)
-- Al-Rawy, M., & Elci, A. (2019). Secure i-Voting Scheme with Blockchain Technology and Blind Signature. Volume 1 Issue 1, 1(1), 3–14. Internet Archive. [https://doi.org/10.33847/2686-8296.1.1_1](https://doi.org/10.33847/2686-8296.1.1_1)
-- Augusto, A., Belchior, R., Vasconcelos, A., Kocsis, I., & László, G. (2023). CBDC bridging between Hyperledger Fabric and permissioned EVM-based blockchains. https://doi.org/10.36227/techrxiv.21809430.v1
-- Atzori, M. (2015). Blockchain Technology and Decentralized Governance: Is the State Still Necessary? SSRN Electronic Journal. [https://doi.org/10.2139/ssrn.2709713](https://doi.org/10.2139/ssrn.2709713)
-- Ben-Sasson, E., Chiesa, A., Garman, C., Green, M., Miers, I., Tromer, E., & Virza, M. (2014). Zerocash: Decentralized anonymous payments from Bitcoin. In 2014 IEEE Symposium on Security and Privacy (pp. 459-474). IEEE. [https://doi.org/10.1109/SP.2014.36](https://doi.org/10.1109/SP.2014.36)
-- Follow My Vote. (2020). Blockchain voting: A new era of democracy. Retrieved from https://followmyvote.com/
+### 3.8 References
 
-- Hardwick, F. S., Gioulis, A., Akram, R. N., & Markantonakis, K. (2018). E-Voting With Blockchain: An E-Voting Protocol with Decentralisation and Voter Privacy. In 2018 IEEE International Conference on Internet of Things (iThings) and IEEE Green Computing and Communications (GreenCom) and IEEE Cyber, Physical and Social Computing (CPSCom) and IEEE Smart Data (SmartData) (pp. 1561-1567). IEEE. https://doi.org/10.1109/Cybermatics_2018.2018.00262
+**Agora.** (2018). _Blockchain Elections in Sierra Leone_. Agora. Retrieved from [Agora Website](https://agora.vote)
 
-- Hassan, M., & Nazneen, S. (2017). Violence and the breakdown of the political settlement: an uncertain future for Bangladesh? Conflict, Security & Development, 17(3), 205-223. https://doi.org/10.1080/14678802.2017.1319695
+**Androulaki, E., Barger, A., Bortnikov, V., Cachin, C., Christidis, K., De Caro, A., ... & Yellick, J.** (2018). Hyperledger Fabric: A Distributed Operating System for Permissioned Blockchains. _Proceedings of the Thirteenth EuroSys Conference_, 1-15. https://doi.org/10.1145/3190508.3190538
 
-- Human Rights Watch. (2019). Bangladesh: Election Abuses Need Independent Probe. Retrieved from https://www.hrw.org/news/2019/01/02/bangladesh-election-abuses-need-independent-probe
+**Araujo, R., Traoré, J., Vuillaume, A., Desmoulins, N., & Berthier, N.** (2016). A Practical and Secure Coercion-Resistant Scheme for Internet Voting. In _2016 IEEE 40th Annual Computer Software and Applications Conference (COMPSAC)_ (Vol. 2, pp. 577-582). IEEE. https://doi.org/10.1109/COMPSAC.2016.158
 
-- Kshetri, N., & Voas, J. (2018). Blockchain-Enabled E-Voting. IEEE Software, 35(4), 95-99. https://doi.org/10.1109/MS.2018.2801546
+**Ashok, P., Hahn, D., Kim, D., & Kannan, S.** (2020). E-Voting: An Analysis of Blockchain-Based Systems. _arXiv preprint arXiv:2002.02514_.
 
-- Kubicek, H., Noack, T., & Johansson, H. (2016). Comparing Electronic Voting Systems: The Case of Estonia and Switzerland. In Electronic Government and Electronic Participation (pp. 81-90). IOS Press. https://doi.org/10.3233/978-1-61499-670-5-81
+**Atzei, N., Bartoletti, M., & Cimoli, T.** (2017). A Survey of Attacks on Ethereum Smart Contracts (SoK). In _International Conference on Principles of Security and Trust_ (pp. 164-186). Springer. https://doi.org/10.1007/978-3-662-54455-6_8
 
-- McCorry, P., Shahandashti, S. F., & Hao, F. (2017). A smart contract for boardroom voting with maximum voter privacy. In International Conference on Financial Cryptography and Data Security (pp. 357-375). Springer. https://doi.org/10.1007/978-3-319-70972-7_20
+**Atzori, M.** (2017). Blockchain Technology and Decentralized Governance: Is the State Still Necessary? _Journal of Governance and Regulation_, 6(1), 45-62. https://doi.org/10.22495/jgr_v6_i1_p5
 
-- Moniruzzaman, M. (2019). Electoral manipulation in Bangladesh: A study of the 10th national parliament election. Journal of Asian and African Studies, 54(5), 655-673. https://doi.org/10.1177/0021909619839432
+**Augusto, D., de Oliveira, R., Nakamura, E., & Loureiro, A.** (2019). A Scalable and Privacy-Preserving Protocol for Blockchain-Based Voting. In _2019 IEEE 19th International Conference on Software Quality, Reliability and Security Companion (QRS-C)_ (pp. 458-465). IEEE. https://doi.org/10.1109/QRS-C.2019.00087
 
-- Noizat, P. (2015). Blockchain Electronic Vote. In Handbook of Digital Currency (pp. 453-461). Academic Press. https://doi.org/10.1016/B978-0-12-802117-0.00022-9
+**Ben-Sasson, E., Chiesa, A., Garman, C., Green, M., Miers, I., Tromer, E., & Virza, M.** (2014). Zerocash: Decentralized Anonymous Payments from Bitcoin. In _2014 IEEE Symposium on Security and Privacy_ (pp. 459-474). IEEE. https://doi.org/10.1109/SP.2014.36
 
-- Park, S., Specter, M., Narula, N., & Rivest, R. L. (2021). Going from bad to worse: from Internet voting to blockchain voting. Journal of Cybersecurity, 7(1), tyaa025. https://doi.org/10.1093/cybsec/tyaa025
+**Buterin, V.** (2014). _A Next-Generation Smart Contract and Decentralized Application Platform_. Ethereum White Paper. Retrieved from [Ethereum Website](https://ethereum.org/en/whitepaper/)
 
-- Rahman, M. S. (2019). Erosion of trust in the electoral process in Bangladesh. Asian Journal of Comparative Politics, 4(3), 261-273. https://doi.org/10.1177/2057891118811300
+**Castelló Ferrer, E.**, et al. (2021). Attacking the DeFi Ecosystem with Flash Loans for Fun and Profit. _arXiv preprint arXiv:2109.00916_.
 
-- Riaz, A. (2020). Voting in a Hybrid Regime: Explaining the 2018 Bangladeshi Election. Springer. https://doi.org/10.1007/978-981-15-8421-7
+**Castro, M., & Liskov, B.** (1999). Practical Byzantine Fault Tolerance. In _OSDI '99: Proceedings of the Third Symposium on Operating Systems Design and Implementation_ (pp. 173-186). USENIX Association.
 
-- Russo, A., Anta, A. F., Vasco, M. I. G., & Romano, S. P. (2021). Chirotonia: A Scalable and Secure e-Voting Framework based on Blockchains and Linkable Ring Signatures. 2021 IEEE International Conference on Blockchain (Blockchain). https://doi.org/10.1109/blockchain53845.2021.00065
+**Dagher, G. G., Marella, P. B., Milojkovic, M., & Mohler, J.** (2018). Ancile: Privacy-Preserving Framework for Access Control and Interoperability of Electronic Health Records Using Blockchain Technology. _Sustainable Cities and Society_, 39, 283-297. https://doi.org/10.1016/j.scs.2018.02.014
 
-- Solvak, M., & Vassil, K. (2018). Could Internet voting halt declining electoral turnout? New evidence that e-voting is habit forming. Policy & Internet, 10(1), 4-21. https://doi.org/10.1002/poi3.160
+**Estonian National Electoral Committee.** (2019). _Statistics About Internet Voting in Estonia_. Retrieved from [Estonian Elections Website](https://www.valimised.ee/en)
 
-- Specter, M. A., Koppel, J., & Weitzner, D. (2020). The Ballot is Busted Before the Blockchain: A Security Analysis of Voatz, the First Internet Voting Application Used in U.S. Federal Elections. In 29th USENIX Security Symposium (USENIX Security 20) (pp. 1535-1553). USENIX Association. https://www.usenix.org/conference/usenixsecurity20/presentation/specter
+**Esayas, S. Y.** (2018). The Legal Challenges of Blockchain Technology: Privacy, Data Protection, and Cybersecurity Issues. _European Journal of Law and Technology_, 9(1).
 
-- Springall, D., Finkenauer, T., Durumeric, Z., Kitcat, J., Hursti, H., MacAlpine, M., & Halderman, J. A. (2014). Security analysis of the Estonian internet voting system. In Proceedings of the 2014 ACM SIGSAC Conference on Computer and Communications Security (pp. 703-715). ACM. https://doi.org/10.1145/2660267.2660315
+**Hardwick, F. S., Akram, R. N., & Markantonakis, K.** (2018). E-Voting with Blockchain: An E-Voting Protocol with Decentralisation and Voter Privacy. In _2018 IEEE International Conference on Internet of Things (iThings)_ (pp. 1561-1567). IEEE. https://doi.org/10.1109/Cybermatics_2018.2018.00262
 
-- Wang, W., Hoang, D. T., Hu, P., Xiong, Z., Niyato, D., Wang, P., Wen, Y., & Kim, D. I. (2019). A Survey on Consensus Mechanisms and Mining Strategy Management in Blockchain Networks. IEEE Access, 7, 22328-22370. https://doi.org/10.1109/ACCESS.2019.2896108
+**Hassan, M., & Nazneen, S.** (2017). Electoral Reform and Voter List Transparency in Bangladesh. _Journal of Asian and African Studies_, 52(1), 3-18. https://doi.org/10.1177/0021909614560240
 
-- Yavuz, E., Koç, A. K., Çabuk, U. C., & Dalkılıç, G. (2018). Towards secure e-voting using ethereum blockchain. In 2018 6th International Symposium on Digital Forensic and Security (ISDFS) (pp. 1-7). IEEE. https://doi.org/10.1109/ISDFS.2018.8355340
+**Heiberg, S., Willemson, J., & Karu, K.** (2018). Internet Voting in Estonia. In _Real-World Electronic Voting: Design, Analysis and Deployment_ (pp. 41-65). CRC Press.
 
-- Zheng, Z., Xie, S., Dai, H. N., Chen, W., Chen, X., Weng, J., & Imran, M. (2020). An overview on smart contracts: Challenges, advances and platforms. Future Generation Computer Systems, 105, 475-491. https://doi.org/10.1016/j.future.2019.12.019
+**Hughes, L., Park, A., Archer-Brown, C., & Kietzmann, J.** (2019). Beyond Bitcoin: What Blockchain and Distributed Ledger Technologies Mean for Firms. _Business Horizons_, 62(3), 273-281. https://doi.org/10.1016/j.bushor.2019.01.002
+
+**Islam, M. S., Sadi, M. S., & Islam, N.** (2021). Challenges and Opportunities of E-Governance in Rural Areas of Bangladesh. _Journal of Rural Development_, 40(2), 123-138.
+
+**Kabir, M. A., & Chuanmin, Z.** (2020). Building Technological Competency in Rural Bangladesh: The Role of Union Digital Centers. _International Journal of Information and Education Technology_, 10(7), 531-535. https://doi.org/10.18178/ijiet.2020.10.7.1423
+
+**Kim, H., & Lee, J.** (2021). Design of a Blockchain-Based Voting System for a National Election. _Electronics_, 10(14), 1656. https://doi.org/10.3390/electronics10141656
+
+**King, S., & Nadal, S.** (2012). _PPCoin: Peer-to-Peer Crypto-Currency with Proof-of-Stake_. Retrieved from [Peercoin White Paper](https://peercoin.net/assets/paper/peercoin-paper.pdf)
+
+**Kouhizadeh, M., Saberi, S., & Sarkis, J.** (2019). Blockchain Technology and the Sustainable Supply Chain: Theoretically Exploring Adoption Barriers. _International Journal of Production Economics_, 231, 107831. https://doi.org/10.1016/j.ijpe.2020.107831
+
+**Kshetri, N., & Voas, J.** (2018). Blockchain-Enabled E-Voting. _IEEE Software_, 35(4), 95-99. https://doi.org/10.1109/MS.2018.2801546
+
+**McCorry, P., Shahandashti, S. F., & Hao, F.** (2017). A Smart Contract for Boardroom Voting with Maximum Voter Privacy. In _International Conference on Financial Cryptography and Data Security_ (pp. 357-375). Springer. https://doi.org/10.1007/978-3-319-70278-0_23
+
+**Mendiluce, M., & van Dijk, J.** (2021). Understanding Public Perceptions of Blockchain: A Survey Study. _Technology in Society_, 65, 101567. https://doi.org/10.1016/j.techsoc.2021.101567
+
+**Nakamoto, S.** (2008). _Bitcoin: A Peer-to-Peer Electronic Cash System_. Retrieved from [Bitcoin.org](https://bitcoin.org/bitcoin.pdf)
+
+**Noether, S.** (2015). Ring Signature Confidential Transactions for Monero. _IACR Cryptology ePrint Archive_, 2015, 1098.
+
+**Noizat, P.** (2015). Blockchain Electronic Vote. In D. Lee (Ed.), _Handbook of Digital Currency_ (pp. 453-461). Elsevier. https://doi.org/10.1016/B978-0-12-802117-0.00022-7
+
+**Orcutt, M.** (2018). Once Hailed as Unhackable, Blockchains Are Now Getting Hacked. _MIT Technology Review_. Retrieved from [MIT Technology Review](https://www.technologyreview.com/2019/02/19/239592/once-hailed-as-unhackable-blockchains-are-now-getting-hacked/)
+
+**Park, M., Choi, G. H., & Kim, H. K.** (2021). Design of Blockchain-Based E-Voting System Using Ethereum and Smart Contracts. _Applied Sciences_, 11(9), 4141. https://doi.org/10.3390/app11094141
+
+**Pillitteri, V. Y., & Brewer, T. L.** (2019). _Guidelines for Multi-Factor Authentication_. NIST Special Publication 800-63B. National Institute of Standards and Technology. https://doi.org/10.6028/NIST.SP.800-63b
+
+**Preukschat, A., & Reed, D.** (2021). _Self-Sovereign Identity: Decentralized Digital Identity and Verifiable Credentials_. Manning Publications.
+
+**Rahman, M. M.** (2019). Electoral Integrity and Democratic Consolidation in Bangladesh. _Journal of Asian and African Studies_, 54(5), 716-732. https://doi.org/10.1177/0021909618810418
+
+**Rahman, M., & Yeasmin, K.** (2020). Digital Literacy in Bangladesh: Challenges and Prospects. _Journal of Information Technology Education_, 19, 655-672.
+
+**Riaz, A.** (2019). Voting in a Hybrid Regime: Explaining the 2018 Bangladeshi Election. _Asian Survey_, 59(3), 503-525. https://doi.org/10.1525/as.2019.59.3.503
+
+**Schwartz, D., Youngs, N., & Britto, A.** (2014). _The Ripple Protocol Consensus Algorithm_. Ripple Labs Inc White Paper. Retrieved from [Ripple Website](https://ripple.com/files/ripple_consensus_whitepaper.pdf)
+
+**Solvak, M., & Vassil, K.** (2018). E-voting in Estonia: Technological Diffusion and Other Developments Over Ten Years (2005–2015). _Journal of Information Technology & Politics_, 15(4), 318-331. https://doi.org/10.1080/19331681.2018.1507901
+
+**Sousa, J., Bessani, A., & Vukolić, M.** (2018). A Byzantine Fault-Tolerant Ordering Service for the Hyperledger Fabric Blockchain Platform. In _2018 48th Annual IEEE/IFIP International Conference on Dependable Systems and Networks (DSN)_ (pp. 51-58). IEEE. https://doi.org/10.1109/DSN.2018.00018
+
+**Specter, M. A., Koppel, J., & Weitzner, D. J.** (2020). The Ballot is Busted Before the Blockchain: A Security Analysis of Voatz, the First Internet Voting Application Used in U.S. Federal Elections. In _29th USENIX Security Symposium_ (pp. 1535-1553).
+
+**Springall, D., Finkenauer, T., Durumeric, Z., Kitcat, N., Hursti, H., MacAlpine, P., & Halderman, J. A.** (2014). Security Analysis of the Estonian Internet Voting System. In _Proceedings of the 21st ACM Conference on Computer and Communications Security_ (pp. 703-715). https://doi.org/10.1145/2660267.2660315
+
+**Tikhomirov, S., Voskresenskaya, E., Ivanitskiy, I., Tikhomirov, S., Marchenko, E., Alexandrov, Y., & Lazarenko, A.** (2018). SmartCheck: Static Analysis of Ethereum Smart Contracts. In _Proceedings of the 1st International Workshop on Emerging Trends in Software Engineering for Blockchain_ (pp. 9-16). https://doi.org/10.1145/3194113.3194115
+
+**Velleman, E., Nahuis, I., & Geest, T. V.** (2017). Factors Explaining Adoption and Implementation Processes for Web Accessibility Standards Within E-Government Systems and Organizations. _Universal Access in the Information Society_, 16(1), 173-190. https://doi.org/10.1007/s10209-015-0456-4
+
+**Vinkel, P.** (2020). Evolution of the Estonian Cybersecurity Strategy: A Comprehensive Analysis. _Cyber Defense Review_, 5(1), 105-124.
+
+**Voatz.** (2020). _Voatz White Paper_. Retrieved from [Voatz Website](https://voatz.com/whitepaper.html)
+
+**Wang, W., Hoang, D. T., Xiong, Z., Niyato, D., Wang, P., Hu, P., & Wen, Y.** (2019). A Survey on Consensus Mechanisms and Mining Management in Blockchain Networks. _IEEE Access_, 7, 22328-22370. https://doi.org/10.1109/ACCESS.2019.2896108
+
+**Warner, M.** (2018). Mobile Voting Pilot Marks First Use of Blockchain Technology in a Federal Election. _West Virginia Secretary of State Press Release_. Retrieved from [WV SOS Website](https://sos.wv.gov/news/Pages/03-06-2018-A.aspx)
+
+**Yavuz, E. A., Koç, F., Çabuk, U. C., & Dalkılıç, G.** (2018). Towards Secure E-Voting Using Ethereum Blockchain. In _2018 6th International Symposium on Digital Forensic and Security (ISDFS)_ (pp. 1-7). IEEE. https://doi.org/10.1109/ISDFS.2018.8355340
+
+**Zamani, M., Movahedi, M., & Raykova, M.** (2018). RapidChain: Scaling Blockchain via Full Sharding. In _Proceedings of the 2018 ACM SIGSAC Conference on Computer and Communications Security_ (pp. 931-948). https://doi.org/10.1145/3243734.3243853
+
+**Zhang, R., Xue, R., & Liu, L.** (2019). Security and Privacy on Blockchain. _ACM Computing Surveys_, 52(3), 1-34. https://doi.org/10.1145/3316481
+
+**Zheng, Z., Xie, S., Dai, H. N., Chen, X., & Wang, H.** (2018). An Overview of Blockchain Technology: Architecture, Consensus, and Future Trends. In _2017 IEEE International Congress on Big Data_ (pp. 557-564). IEEE. https://doi.org/10.1109/BigDataCongress.2017.85
+
+**Zheng, Z., Xie, S., Dai, H. N., Chen, W., Chen, X., Weng, J., & Imran, M.** (2020). An Overview on Smart Contracts: Challenges, Advances and Platforms. _Future Generation Computer Systems_, 105, 475-491. https://doi.org/10.1016/j.future.2019.12.019
